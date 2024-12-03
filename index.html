@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIRST PRACTICE ("Numbers, Strings, Objects and Array")</title>
+  </head>
+  <body>
+    <script>
+      //NUMBER
+      console.log(parseInt("15") + 250);
+
+      //STRING
+      console.log("I Love Muhammad");
+      //I got to understand that ".length" is used to calculate the length i.e the number of what to console
+      console.log("phenomenal women".length);
+
+      //OBJECTS
+      let myTodos = {
+        1: "Perform Solah",
+        2: "Brush my Teeth",
+        3: "Take my Breakfast",
+        4: "Take my Bath",
+        5: "Go to School",
+        6: "Shower after school hours",
+        7: "Take Dinner",
+        Eighth: "Read my Books",
+        Ninth: "Write Codes",
+      };
+      console.log(myTodos);
+
+      var Biscuit = {
+        type: "Chocolate",
+        sugared: "minimal",
+        sweetness: 60,
+        Buttered: false,
+        pieces: 5,
+        sayType: function () {
+          console.log("Type: " + this.type);
+          console.log("Type: " + this.sugared);
+          console.log("Type " + this.Buttered);
+          console.log("Type: " + this.sweetness);
+          console.log("Type: " + this.pieces);
+        },
+        saySweetness: function () {
+          //if it's done as been done in the first line, obviously it'll be calculated instead of been displayed as written.
+          //console.log("Sweetness: " + this.sweetness / 100);
+          //But in this line below,it will be displayed as written as it has been specified.
+          console.log("Sweetness: " + this.sweetness + "/100");
+        },
+
+        sayPieces: function () {
+          console.log("Pieces: " + this.pieces + "-5");
+        },
+      };
+      Biscuit.sayPieces();
+    </script>
+  </body>
+</html>
