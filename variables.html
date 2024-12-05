@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <script>
+      //Assigning Values to some Variables using each of the Variable types
+      var string = "AnjolaAnnabi";
+      var number = 9062517157;
+      var array = [2, 4, 6, 8, 10, "Coconut", "Apple"];
+      var object = {
+        favFood: "jollofRice and Chicken",
+        favDrink: "chocolateDrink",
+        favFruit: "pineApple",
+        favColor: "babyPink",
+        favDress: "longGown",
+        favDressingStyle: "muslimahsDressingStyle",
+      };
+
+      console.log(string);
+      console.log(number);
+      console.log(array);
+      console.log(object);
+
+      //assigning a function to a particular variable
+      function greet() {
+        myName = "AnjolaAnnabi!";
+        console.log(
+          "Happy" + " " + "Maolid" + " " + "Celebration," + " " + myName
+        );
+      }
+      //Now,we will have to call the function out by;
+      greet();
+      //we can still further call a function as many as possible by this;
+      greet();
+      greet();
+      greet();
+
+      //We can further do some simple and sweet calculations using Javascript
+      var count = 0;
+      function increase() {
+        count += 10;
+        console.log(count);
+      }
+      increase();
+      increase();
+      increase();
+      increase();
+      increase();
+      increase();
+    </script>
+  </body>
+</html>
